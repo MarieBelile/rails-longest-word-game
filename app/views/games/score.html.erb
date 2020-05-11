@@ -1,0 +1,13 @@
+<div>
+  <h1>Welcome to the longest word-game!</h1>
+  <p><%= params[:word] %></p>
+    <% if @included %>
+      <% if @english_word %>
+        <p>Congratulations</p>
+      <% else %>
+        <p>Sorry <strong><%= @word %></strong>< it's not an english word</p>
+      <% end %>
+    <% else %>
+      <p>Sorry <strong><%= @word %></strong> it's not valid</p>
+    <% end %>
+</div>
